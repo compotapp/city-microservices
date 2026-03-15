@@ -4,7 +4,7 @@ import com.pot.app.core.dto.production.of.numbers.NumberSequenceRequest;
 
 import java.util.List;
 
-public interface NumberSequenceService {
+public interface NumberGeneratorService {
 
     List<String> generate(NumberSequenceRequest request);
 }

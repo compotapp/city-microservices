@@ -15,7 +15,7 @@ import static java.lang.String.format;
 
 @Service
 @RequiredArgsConstructor
-public class NumberSequenceServiceImpl implements NumberSequenceService {
+public class NumberGeneratorServiceImpl implements NumberGeneratorService {
 
     private final static String FORMAT = "%s-%04d";
     private final NumberSequenceRepository repository;
