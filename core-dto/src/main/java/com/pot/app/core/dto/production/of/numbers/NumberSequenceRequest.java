@@ -15,7 +15,8 @@ public record NumberSequenceRequest(
         ORDER("ORD"),
         OWNER("OWN"),
         PRODUCT("PRD"),
-        TASK("TSK");
+        TASK("TSK"),
+        TEST("TEST");
 
         private final String prefix;
     }

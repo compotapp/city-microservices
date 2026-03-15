@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   cm-postgres:
-    image: "postgres:15.0"
+    image: "postgres:17.0"
     container_name: "cm-postgres"
     ports:
       - "5432:5432"
