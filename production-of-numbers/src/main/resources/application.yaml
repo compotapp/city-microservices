@@ -1,0 +1,10 @@
+server:
+  port: 10002
+
+spring:
+  application:
+    name: production-of-numbers
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/production_of_numbers
