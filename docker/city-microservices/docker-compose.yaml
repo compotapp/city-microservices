@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+
+  cm-postgres:
+    image: "postgres:15.0"
+    container_name: "cm-postgres"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      # Volume для сохранения данных БД
+      - postgres_data:/var/lib/postgresql/data
+      #Запустит скрипты из пакета
+      - ./postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - city-microservices
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U user" ]  # Команда для проверки
+      interval: 10s      # Как часто проверять
+      timeout: 5s        # Время ожидания ответа
+      retries: 5         # Сколько неудачных попыток до статуса "unhealthy"
+      start_period: 30s  # Задержка перед первой проверкой (опционально)
+
+# Объявляем volume
+volumes:
+  postgres_data:
+    # Указывает, что том будет создан на локальной файловой системе хоста (где запущен Docker)
+    driver: local
+
+networks:
+  city-microservices:
+    driver: bridge
+
+
+# docker-compose -f docker/city-microservices/docker-compose.yaml up -d
+
+# добавить health check
