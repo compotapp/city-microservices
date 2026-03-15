@@ -19,6 +19,7 @@
         <java.version>17</java.version>
         <spring.boot.version>4.0.3</spring.boot.version>
         <maven.compiler.version>3.14.1</maven.compiler.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -37,6 +38,13 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <!-- dto -->
+        <dependency>
+            <groupId>com.pot.app</groupId>
+            <artifactId>core-dto</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- util -->
