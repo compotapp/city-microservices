@@ -1,16 +1,17 @@
 package com.pot.app.productionofgoods.service.work;
 
+import com.pot.app.core.dto.mayor.of.city.enums.EmployeeType;
 import com.pot.app.productionofgoods.entity.Employee;
-import com.pot.app.productionofgoods.enums.EmployeeType;
-import com.pot.app.productionofgoods.integration.service.MayorIntegrationService;
+import com.pot.app.productionofgoods.integration.mayor.of.city.service.MayorIntegrationService;
 import com.pot.app.productionofgoods.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import static com.pot.app.productionofgoods.enums.EmployeeStatus.RELAX;
-import static com.pot.app.productionofgoods.enums.EmployeeStatus.WORK;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeStatus.RELAX;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeStatus.WORK;
+import static com.pot.app.productionofgoods.mapping.EmployeeMapping.toEntity;
 
 @Service
 @Slf4j
@@ -32,7 +33,7 @@ public class EmployeeFallbackServiceImpl implements EmployeeFallbackService {
                     return employeeService.save(empl);
                 })
                 .orElseGet(() -> {
-                    Employee employee = mayorService.getEmployee(type);
+                    Employee employee = toEntity(mayorService.getEmployee(type));
                     log.debug("получен новый сотрудник номер: {}, тип: {}", employee.getNumber(), employee.getType().getTitle());
                     employee.setStatus(WORK);
                     return employeeService.save(employee);

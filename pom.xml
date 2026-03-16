@@ -14,6 +14,7 @@
     <modules>
         <module>production-of-numbers</module>
         <module>production-of-goods</module>
+        <module>mayor-of-city</module>
     </modules>
 
     <properties>
@@ -59,7 +60,7 @@
         <dependency>
             <groupId>com.pot.app</groupId>
             <artifactId>core-dto</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
 
         <!-- util -->

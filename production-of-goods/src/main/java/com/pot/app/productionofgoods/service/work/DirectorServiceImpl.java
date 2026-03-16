@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.pot.app.productionofgoods.enums.EmployeeType.DIRECTOR;
-import static com.pot.app.productionofgoods.enums.EmployeeType.MANAGER;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeType.DIRECTOR;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeType.MANAGER;
 import static com.pot.app.productionofgoods.service.work.ExperienceProcessor.processExperienceGain;
 
 @Service

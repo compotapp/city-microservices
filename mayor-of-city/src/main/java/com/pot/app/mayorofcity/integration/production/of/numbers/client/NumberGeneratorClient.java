@@ -1,4 +1,4 @@
-package com.pot.app.productionofgoods.integration.client;
+package com.pot.app.mayorofcity.integration.production.of.numbers.client;
 
 import com.pot.app.core.dto.production.of.numbers.NumberSequenceRequest;
 import org.springframework.beans.factory.annotation.Value;

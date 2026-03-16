@@ -1,8 +1,8 @@
-package com.pot.app.productionofgoods.integration.production.of.numbers.service;
+package com.pot.app.mayorofcity.integration.production.of.numbers.service;
 
 import com.pot.app.core.dto.production.of.numbers.NumberSequenceRequest;
 import com.pot.app.core.dto.production.of.numbers.NumberSequenceRequest.SequenceType;
-import com.pot.app.productionofgoods.integration.production.of.numbers.client.NumberGeneratorClient;
+import com.pot.app.mayorofcity.integration.production.of.numbers.client.NumberGeneratorClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

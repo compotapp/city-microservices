@@ -1,4 +1,4 @@
-package com.pot.app.productionofgoods.entity;
+package com.pot.app.mayorofcity.entity;
 
 import com.pot.app.core.dto.mayor.of.city.enums.EmployeeStatus;
 import com.pot.app.core.dto.mayor.of.city.enums.EmployeeType;
@@ -18,7 +18,10 @@ import static jakarta.persistence.EnumType.STRING;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class Employee extends NumberedEntity {
+public class Employee extends BaseEntity {
+
+    @Column(unique = true, nullable = false)
+    private String number;
 
     @Column(nullable = false)
     @Builder.Default
@@ -26,9 +29,6 @@ public class Employee extends NumberedEntity {
 
     @Column(nullable = false)
     int exp;
-
-    @Column(nullable = false)
-    int points;
 
     @Enumerated(STRING)
     @Column(nullable = false)

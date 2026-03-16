@@ -1,9 +1,10 @@
 package com.pot.app.productionofgoods.mapping;
 
+import com.pot.app.core.dto.mayor.of.city.EmployeeDto;
 import com.pot.app.productionofgoods.entity.Employee;
-import com.pot.app.productionofgoods.integration.dto.EmployeeDto;
 
-import static com.pot.app.productionofgoods.enums.EmployeeStatus.FREE;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeStatus.FREE;
+
 
 public class EmployeeMapping {
 

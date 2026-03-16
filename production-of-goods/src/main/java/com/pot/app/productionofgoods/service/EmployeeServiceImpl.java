@@ -1,8 +1,8 @@
 package com.pot.app.productionofgoods.service;
 
+import com.pot.app.core.dto.mayor.of.city.EmployeeDto;
+import com.pot.app.core.dto.mayor.of.city.enums.EmployeeType;
 import com.pot.app.productionofgoods.entity.Employee;
-import com.pot.app.productionofgoods.enums.EmployeeType;
-import com.pot.app.productionofgoods.integration.dto.EmployeeDto;
 import com.pot.app.productionofgoods.repository.jpa.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

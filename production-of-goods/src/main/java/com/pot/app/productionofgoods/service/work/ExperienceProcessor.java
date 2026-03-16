@@ -3,8 +3,8 @@ package com.pot.app.productionofgoods.service.work;
 import com.pot.app.productionofgoods.entity.Employee;
 import lombok.extern.slf4j.Slf4j;
 
-import static com.pot.app.productionofgoods.enums.EmployeeStatus.FREE;
-import static com.pot.app.productionofgoods.enums.EmployeeStatus.RELAX;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeStatus.FREE;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeStatus.RELAX;
 
 @Slf4j
 public class ExperienceProcessor {

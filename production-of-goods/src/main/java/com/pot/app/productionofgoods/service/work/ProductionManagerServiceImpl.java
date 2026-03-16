@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import static com.pot.app.productionofgoods.enums.EmployeeType.WORKER;
+import static com.pot.app.core.dto.mayor.of.city.enums.EmployeeType.WORKER;
 import static com.pot.app.productionofgoods.enums.TaskStatus.ACTIVE;
 import static com.pot.app.productionofgoods.enums.TaskStatus.COMPLETE;
 import static com.pot.app.productionofgoods.service.work.ExperienceProcessor.processExperienceGain;
