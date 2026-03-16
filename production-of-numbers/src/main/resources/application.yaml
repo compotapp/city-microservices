@@ -8,3 +8,5 @@ spring:
     username: user
     password: password
     url: jdbc:postgresql://localhost:5432/production_of_numbers
+  jpa:
+    open-in-view: false  # сессия живет в рамках всего http запроса

@@ -1,0 +1,18 @@
+server:
+  port: 10001
+
+spring:
+  application:
+    name: production-of-goods
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/production_of_goods
+  jpa:
+    open-in-view: false
+
+integration:
+  production-of-numbers:
+    url: http://localhost:10002
+  mayor-of-city:
+    url: http://localhost:10003
