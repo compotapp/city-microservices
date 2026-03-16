@@ -1,18 +1,17 @@
 server:
-  port: 10001
+  port: 10003
 
 spring:
   application:
-    name: production-of-goods
+    name: mayor-of-city
   datasource:
     username: user
     password: password
-    url: jdbc:postgresql://localhost:5432/production_of_goods
+    url: jdbc:postgresql://localhost:5432/mayor_of_city
   jpa:
     open-in-view: false
 
 integration:
   production-of-numbers:
     url: http://localhost:10002
-  mayor-of-city:
-    url: http://localhost:10003
+

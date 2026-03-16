@@ -1,4 +1,4 @@
-package com.pot.app.productionofgoods.enums;
+package com.pot.app.core.dto.mayor.of.city.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

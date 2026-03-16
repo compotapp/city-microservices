@@ -1,6 +1,6 @@
-package com.pot.app.productionofgoods.integration.dto;
+package com.pot.app.core.dto.mayor.of.city;
 
-import com.pot.app.productionofgoods.enums.EmployeeType;
+import com.pot.app.core.dto.mayor.of.city.enums.EmployeeType;
 
 public record EmployeeDto(
         String number,
